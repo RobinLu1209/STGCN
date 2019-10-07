@@ -3,6 +3,7 @@
 ## Basic Models
 1. ChebNet: [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://github.com/mdeff/cnn_graph)
 2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)
+3. DCRNN: [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://github.com/liyaguang/DCRNN)
 
 ## Environmental Data
 
