@@ -1,5 +1,9 @@
 # Spatial-temporal Data Analysis on Graph Convolutional Network
 
+## Basic Models
+1. ChebNet: [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://github.com/mdeff/cnn_graph)
+2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)
+
 ## Environmental Data
 
 1. [Targeted source detection for environment data](https://arxiv.org/pdf/1908.11056.pdf)
