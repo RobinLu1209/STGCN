@@ -1,5 +1,24 @@
 # Spatial-temporal Data Analysis on Graph Convolutional Network
 
+
+## Data
+Filename | Dimension | Instance 
+-|-|-
+traffic_speed_sub-dataset |3 * (5856*45148) | road_id = 1562548955, timeslot_id = 0, speed = 41.3480687196
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Basic Models
 1. ChebNet: [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://github.com/mdeff/cnn_graph)
 2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)
