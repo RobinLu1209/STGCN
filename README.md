@@ -2,21 +2,12 @@
 
 
 ## Data
-Filename | Dimension | Instance 
--|-|-
-traffic_speed_sub-dataset |3 * (5856*45148) | road_id = 1562548955, timeslot_id = 0, speed = 41.3480687196
-
-
-
-
-
-
-
-
-
-
-
-
+Filename | Dimension | Instance | Tips
+:-:|:-:|:-:|:-: 
+traffic_speed_sub-dataset | 3 * (5856*45148) | road_id = 1562548955, timeslot_id = 0, speed = 41.3480687196 | No headings, sep = ' '
+road_network_sub-dataset | 8 * 45148(-Heading) | road_id = 1562548955, width = 30, direction = 3, snodeid = 1520445066, enodeid = 1549742690, length = 0.038, speedclass = 6, lanenum = 1 | Headings, sep = '\t'
+link_gps | 3 * 45418 | road_id = 1562548955, longtitude = 116.367557, latitude = 39.899537 | No headings, sep = ' ' 
+query_sub-dataset | 61 * 6 * N | search_time = 2017-04-01 19:42:23, start_pos = (116.325461 40.036083), end_pos = (116.350811 40.090999), travel_time = 33 | No headings, sep = ' ' or ','
 
 
 ## Basic Models
