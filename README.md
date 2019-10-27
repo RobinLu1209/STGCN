@@ -3,7 +3,7 @@
 
 ## Data
 
-The data provider gives 15073 central road and its neighbour information, so there are totally 45148 roads data(speed/road netwok/gps) provided.
+The data provider gives 15073 central road and its neighbour information, so there are totally 45148 roads data(speed/road netwok/gps) provided. The total time slot number is 5856(61days * 24hours * 4quarter).
 
 Filename | Dimension | Instance | Tips
 :-:|:-:|:-:|:-: 
@@ -14,6 +14,12 @@ query_sub-dataset | 61 * 6 * N | search_time = 2017-04-01 19:42:23, start_pos = 
 neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, next2, ..., next5 | 
 
 
+## Analysis
+
+1. How to establish a ROAD_NETWORK
+
+
+
 ## Basic Models
 1. ChebNet: [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://github.com/mdeff/cnn_graph)
 2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)
@@ -22,8 +28,6 @@ neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, ne
 ## Environmental Data
 
 1. [Targeted source detection for environment data](https://arxiv.org/pdf/1908.11056.pdf)
-
-## Traffic Data
 
 ## Basic Methods
 1. [K-SVD in Dictionary learning](https://www.cnblogs.com/endlesscoding/p/10090866.html) There are codes and some illustration. 
