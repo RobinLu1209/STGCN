@@ -1,4 +1,4 @@
-# Spatial-temporal Data Analysis on Graph Convolutional Network
+# Spatial-Temporal Data Analysis on Graph Convolutional Network
 
 
 ## Data
