@@ -1,0 +1,5 @@
+*.pkl
+*.h5
+*.csv
+data_processing/baidu_dcrnn_roadmap
+data_processing/baidu_loc_dcrnn
