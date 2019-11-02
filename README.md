@@ -21,7 +21,11 @@ neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, ne
 	- [speed_h5py.py](https://github.com/RobinLu1209/STGCN/blob/master/DCRNN_baseline/speed_h5py.py) is used to generate speed dataset in h5 format. 
 	- Then, use this speed_dataset to generate train/validate/test data by code [generate_training_data.py](https://github.com/RobinLu1209/STGCN/blob/master/DCRNN_baseline/generate_training_data.py) .
 	- [gen_adj_mx.py](https://github.com/RobinLu1209/STGCN/blob/master/DCRNN_baseline/gen_adj_mx.py) is used to generate road_map.
-
+2. Train DCRNN model
+	- Comand line:
+```
+python dcrnn_train.py --config_filename=data/model/dcrnn_baidu.yaml
+```
 
 
 ## Basic Models
