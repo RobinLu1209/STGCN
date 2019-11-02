@@ -35,9 +35,9 @@ def generate_graph_seq2seq_io_data(
     file.close()
 
     num_samples, num_nodes = speed_data.shape
-    print("num_samples = ", num_samples)
-    print("num_nodes = ", num_nodes)
-    data = np.expand_dims(speed_data.values, axis=-1)
+    print("INFO: num_samples = ", num_samples)
+    print("INFO: num_nodes = ", num_nodes)
+    data = np.expand_dims(speed_data, axis=-1)
     data_list = [data]
 
     ####################### Q_Traffic ##########################
@@ -66,7 +66,7 @@ def generate_graph_seq2seq_io_data(
     # t is the index of the last observation.
     min_t = abs(min(x_offsets))
     max_t = abs(num_samples - abs(max(y_offsets)))  # Exclusive
-    for t in tqmd(range(min_t, max_t)):
+    for t in tqdm(range(min_t, max_t)):
         x_t = data[t + x_offsets, ...]
         x.append(x_t)
         y_t = data[t + y_offsets, ...]
@@ -76,7 +76,6 @@ def generate_graph_seq2seq_io_data(
     return x, y
 
 def generate_train_val_test(args):
-    print("Read h5py success.")
     # 0 is the latest observed sample.
     x_offsets = np.sort(
         # np.concatenate(([-week_size + 1, -day_size + 1], np.arange(-11, 1, 1)))
@@ -93,7 +92,7 @@ def generate_train_val_test(args):
         add_day_in_week=False,
     )
 
-    print("x shape: ", x.shape, ", y shape: ", y.shape)
+    print("INFO: x shape: ", x.shape, ", y shape: ", y.shape)
     # Write the data into npz file.
     # num_test = 6831, using the last 6831 examples as testing.
     # for the rest: 7/8 is used for training, and 1/8 is used for validation.
@@ -122,10 +121,10 @@ def generate_train_val_test(args):
             x_offsets=x_offsets.reshape(list(x_offsets.shape) + [1]),
             y_offsets=y_offsets.reshape(list(y_offsets.shape) + [1]),
         )
-
+    print("success")
 
 def main(args):
-    print("Generating training data")
+    print("INFO: Generating training data")
     generate_train_val_test(args)
 
 
