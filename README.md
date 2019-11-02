@@ -24,6 +24,9 @@ neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, ne
 2. Train DCRNN model
 	- Comand line:
 ```
+tmux a -t dcrnn_baidu
+source activate python3.6
+cd ~/workspace/GCN/DCRNN-master
 python dcrnn_train.py --config_filename=data/model/dcrnn_baidu.yaml
 ```
 
