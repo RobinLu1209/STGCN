@@ -3,6 +3,16 @@
 
 ## Data
 
+#### METR-LA and PEMS-BAY
+
+Dataset | Node num | Time | Duration | Time slot | Scene
+:-:|:-:|:-:|:-:|:-:|:-:
+METR-LA | 207 | 2012.03.01~2012.6.27 | 4 months | 5mins | Loop detecors in highway
+PEMS-BAY | 325 | 2017.01.01~2017.06.30 | 6 months | 5mins | Sensors in Bay Area 
+
+
+#### Q_Traffic Dataset
+
 The data provider gives 15073 central road and its neighbour information, so there are totally 45148 roads data(speed/road netwok/gps) provided. The total time slot number is 5856(61days * 24hours * 4quarter).
 
 Filename | Dimension | Instance | Tips
@@ -22,7 +32,7 @@ neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, ne
 	- Then, use this speed_dataset to generate train/validate/test data by code [generate_training_data.py](https://github.com/RobinLu1209/STGCN/blob/master/DCRNN_baseline/generate_training_data.py) .
 	- [gen_adj_mx.py](https://github.com/RobinLu1209/STGCN/blob/master/DCRNN_baseline/gen_adj_mx.py) is used to generate road_map.
 2. Train DCRNN model
-	- Comand line:
+	- Comand line(The version of tensorflow-gpu must be higher than tensorflow):
 ```
 tmux a -t dcrnn_baidu
 source activate python3.6
