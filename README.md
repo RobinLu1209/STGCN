@@ -51,4 +51,17 @@ python dcrnn_train.py --config_filename=data/model/dcrnn_baidu.yaml
 1. [Targeted source detection for environment data](https://arxiv.org/pdf/1908.11056.pdf)
 
 ## Basic Methods
-1. [K-SVD in Dictionary learning](https://www.cnblogs.com/endlesscoding/p/10090866.html) There are codes and some illustration. 
+1. [K-SVD in Dictionary learning](https://www.cnblogs.com/endlesscoding/p/10090866.html) There are codes and some illustration.
+
+## Tips
+
+### Tensorflow and CUDA compatible combinations
+version | Python version | cuDNN | CUDA
+:-:|:-:|:-:|:-:
+tensorflow-gpu-1.14.0 | python3.6 | 7.6 | 10.0
+
+
+
+
+
+ 
