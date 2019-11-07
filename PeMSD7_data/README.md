@@ -4,7 +4,7 @@
 
 Dataset | Node num | Time | Duration | Time slot | Scene
 :-:|:-:|:-:|:-:|:-:|:-:
-PeMSD7 | 288 | Weekdays of May and June of 2012 |44 days| 5mins | Sensor data to detect the car speed
+PeMSD7 | 228 | Weekdays of May and June of 2012 |44 days| 5mins | Sensor data to detect the car speed
 
 ## Data processing
 
@@ -12,7 +12,7 @@ PeMSD7 | 288 | Weekdays of May and June of 2012 |44 days| 5mins | Sensor data to
 2. Use PeMSD7_traindata.ipynb to generate train/validation/test data
 3. Create tensorflow-gpu environment for training.
 ```
-source activate tensorflow-gpu
+source activate tensorflow_gpu
 ```
 4. Run the training, but meet with some bug about data type.
 ```
