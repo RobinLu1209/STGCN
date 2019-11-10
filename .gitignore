@@ -3,5 +3,6 @@
 *.csv
 *.npz
 *.npy
+*.zip
 data_processing/baidu_dcrnn_roadmap
 data_processing/baidu_loc_dcrnn
