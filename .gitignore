@@ -2,5 +2,6 @@
 *.h5
 *.csv
 *.npz
+*.npy
 data_processing/baidu_dcrnn_roadmap
 data_processing/baidu_loc_dcrnn
