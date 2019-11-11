@@ -1,6 +1,12 @@
 # Spatial-Temporal Data Analysis on Graph Convolutional Network
 
 
+## Baseline Result
+
+Dataset | Model | MAE | Parameter 
+:-:|:-:|:-:|:-:
+METR-LA | STGCN(pytorch) | 3.982 | Epoch = 1000 
+
 ## Data
 
 #### METR-LA and PEMS-BAY
