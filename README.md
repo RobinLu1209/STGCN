@@ -15,7 +15,7 @@ Dataset | Node num | Time | Duration | Time slot | Scene
 :-:|:-:|:-:|:-:|:-:|:-:
 METR-LA | 207 | 2012.03.01~2012.6.27 | 4 months | 5mins | Loop detecors in highway
 PEMS-BAY | 325 | 2017.01.01~2017.06.30 | 6 months | 5mins | Sensors in Bay Area 
-
+PEMSD7 | 228 | Workday of 2012.05-2012.06 | 44 days | 5mins | Sensors in California
 
 #### Q_Traffic Dataset
 
@@ -49,8 +49,10 @@ python dcrnn_train.py --config_filename=data/model/dcrnn_baidu.yaml
 
 ## Basic Models
 1. ChebNet: [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://github.com/mdeff/cnn_graph)
-2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)  [pytorch version](https://github.com/FelixOpolka/STGCN-PyTorch)
+2. STGCN: [Spatio-Temporal Graph Convolutional Networks](https://github.com/PKUAI26/STGCN-IJCAI-18)  | For pytorch version: [pytorch version](https://github.com/FelixOpolka/STGCN-PyTorch)
 3. DCRNN: [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://github.com/liyaguang/DCRNN)
+4. Multi-head Self Attention Model(AutoInt): [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://github.com/DeepGraphLearning/RecommenderSystems/tree/master/featureRec)
+CSDN reference: [AutoInt：使用Multi-head Self-Attention进行自动特征学习的CTR模型](https://blog.csdn.net/u012151283/article/details/85310370)
 
 ## Environmental Data
 
