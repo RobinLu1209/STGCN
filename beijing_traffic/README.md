@@ -1,5 +1,16 @@
 # Beijing Traffic Data Processing
 
+### Data info
+boundary: [116.46812, 39.929101], [116.457053, 39.919362]
+
+index | value
+:-:|:-:
+number of nodes | 334
+number of edges | 707
+average node degree | 4.233
+intersection count | 307
+
+
 ### Road feature Extraction(2019.11.13)
 
 Road feature matrix: [01_road_feature_matrix_full.ipynb](https://github.com/RobinLu1209/STGCN/blob/master/beijing_traffic/01_road_feature_matrix_full.ipynb)
