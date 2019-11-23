@@ -29,6 +29,8 @@ link_gps | 3 * 45418 | road_id = 1562548955, longtitude = 116.367557, latitude =
 query_sub-dataset | 61 * 6 * N | search_time = 2017-04-01 19:42:23, start_pos = (116.325461 40.036083), end_pos = (116.350811 40.090999), travel_time = 33 | No headings, sep = ' ' or ','
 neighbours_1km.txt | 15073 * 11 | road_id = xx, pre1, pre2, ..., pre5, next1, next2, ..., next5 | 
 
+#### Highways England network journey time and traffic flow data [Link](https://data.gov.uk/dataset/9562c512-4a0b-45ee-b6ad-afc0f99b841f/highways-england-network-journey-time-and-traffic-flow-data)
+
 
 ## Baseline Analysis
 
