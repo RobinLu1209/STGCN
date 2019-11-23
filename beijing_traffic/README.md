@@ -23,4 +23,9 @@ Select node from Big graph: [02_select_node_from_LargeMap.ipynb](https://github.
 
 According to selected node to extract road feature information in road_feature_matrix: [03_select_road_map_feature.ipynb](https://github.com/RobinLu1209/STGCN/blob/master/beijing_traffic/03_select_road_map_feature.ipynb)
 
+Use Fast Unfolding neighborhood discovery algorithm, we can format the data into different cluster. And the "distance" of different feature vector can be calculated by cosine similarity function.
 
+### Useful link
+- [百度地图经纬度坐标拾取] (http://api.map.baidu.com/lbsapi/getpoint/index.html)
+- [GPS与百度地图经纬度转换](http://map.yanue.net/gps.html) 
+- [盖亚滴滴开放数据](https://outreach.didichuxing.com/research/opendata/)
