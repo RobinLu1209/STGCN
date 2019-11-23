@@ -2,10 +2,8 @@
 
 对不同道路的车辆行驶速度的预测实际上是对道路顺畅程度的估计。
 
-滴滴提出用TTI指标衡量道路顺畅程度：
-
-$$ S = {Link_1, Link_2, ... Link_N} $$
-$$ TTI = \frac{\sum_{i=1}^{N}\frac{L_i}{V_i}W_i}{\sum_{i=1}^{N}\frac{L_i}{V_free_i}W_i} $$
+[滴滴](https://github.com/didi/TrafficIndex)提出用TTI指标衡量道路顺畅程度：
+![How to calculate TTI](https://github.com/didi/TrafficIndex/blob/master/method.jpg)
 
 现有的图卷积网络利用“邻居关系”对周围节点进行信息聚合，如GraphSage，GCN等。但是现有图卷积模型中有以下不足：
 - 在聚合信息时仅仅聚合了邻居信息，即仅考虑了连通性而忽略了结构性。因此，考虑通过对其结构的分析，挖掘图的社区，对处于相同社区的节点信息进行采样聚合。
