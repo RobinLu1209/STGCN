@@ -17,6 +17,15 @@ METR-LA | 207 | 2012.03.01~2012.6.27 | 4 months | 5mins | Loop detecors in highw
 PEMS-BAY | 325 | 2017.01.01~2017.06.30 | 6 months | 5mins | Sensors in Bay Area 
 PEMSD7 | 228 | Workday of 2012.05-2012.06 | 44 days | 5mins | Sensors in California
 
+- METR-LA
+Data | Info
+:-: | :-:
+distance_la_2012.csv|两两节点之间的距离
+graph_sensor_ids|所有节点的id list
+graph_sensor_locations|所有节点的坐标
+metra_la.csv|每个节点在每个时刻的速度信息
+
+
 #### Q_Traffic Dataset [Link](https://github.com/JingqingZ/BaiduTraffic)
 
 The data provider gives 15073 central road and its neighbour information, so there are totally 45148 roads data(speed/road netwok/gps) provided. The total time slot number is 5856(61days * 24hours * 4quarter).
