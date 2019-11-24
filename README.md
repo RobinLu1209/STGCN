@@ -72,7 +72,7 @@ CSDN reference: [AutoInt：使用Multi-head Self-Attention进行自动特征学�
 
 ## Basic Methods
 1. [K-SVD in Dictionary learning](https://www.cnblogs.com/endlesscoding/p/10090866.html) There are codes and some illustration.
-
+2. [osmnx guide]https://github.com/gboeing/osmnx-examples/tree/master/notebooks()
 ## Tips
 
 ### Tensorflow and CUDA compatible combinations
