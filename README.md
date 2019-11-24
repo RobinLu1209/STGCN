@@ -18,12 +18,13 @@ PEMS-BAY | 325 | 2017.01.01~2017.06.30 | 6 months | 5mins | Sensors in Bay Area
 PEMSD7 | 228 | Workday of 2012.05-2012.06 | 44 days | 5mins | Sensors in California
 
 - METR-LA
+
 Data | Info
 :-: | :-:
-distance_la_2012.csv|两两节点之间的距离
-graph_sensor_ids|所有节点的id list
-graph_sensor_locations|所有节点的坐标
-metra_la.csv|每个节点在每个时刻的速度信息
+distance_la_2012.csv | 两两节点之间的距离
+graph_sensor_ids | 所有节点的id list
+graph_sensor_locations | 所有节点的坐标
+metra_la.csv | 每个节点在每个时刻的速度信息
 
 
 #### Q_Traffic Dataset [Link](https://github.com/JingqingZ/BaiduTraffic)
