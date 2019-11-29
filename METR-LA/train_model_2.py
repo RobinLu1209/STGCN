@@ -61,7 +61,7 @@ print("INFO: Start training...")
 history = model.fit(x_train, 
                     y_train,
                     batch_size=1024,
-                    epochs=800,
+                    epochs=400,
                     validation_data=(x_val,y_val))
 
 print("INFO: Start testing...")
