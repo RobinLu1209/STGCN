@@ -81,8 +81,10 @@ print("INFO: x_test:", x_test.shape, "y_test:", y_test.shape, "time_test", time_
 
 A = np.load("/home/blu/workspace/GCN/STGCN-PyTorch/data/adj_mat.npy")
 random_walk = calculate_random_walk_matrix(A)
+
 class GCN(tf.keras.layers.Layer):
   def __init__(self, units=207, input_dim=207, matrix = None):
+      
     super(GCN, self).__init__()
     w_init = tf.random_normal_initializer()
     self.w1 = tf.Variable(initial_value=w_init(shape=(input_dim, units),
@@ -96,12 +98,18 @@ class GCN(tf.keras.layers.Layer):
     self.dense = tf.keras.layers.Dense(units=207, activation=tf.nn.relu, kernel_regularizer=tf.keras.regularizers.l2(1e-3))
 
   def call(self, inputs):
-    weight_1 = tf.multiply(self.matrix,self.w1)
-    weight_2 = tf.multiply(self.matrix,self.w2)
     inputs = tf.reshape(inputs, [-1, 207])
-    y1 = tf.nn.relu(tf.matmul(inputs, weight_1))
-    y2 = tf.nn.relu(tf.matmul(y1, weight_2) + self.b)
-    output = tf.reshape(y2, [-1, 12, 207])
+    inputs = tf.transpose(inputs)
+    graph_1 = tf.matmul(self.matrix, inputs)
+    graph_1 = tf.reshape(graph_1, [-1, 207])
+    graph_1_output = tf.matmul(graph_1, self.w1)
+    graph_1_output = tf.nn.relu(graph_1_output)
+    graph_2_input = tf.reshape(graph_1_output, [207, -1])
+    graph_2 = tf.matmul(self.matrix, graph_2_input)
+    graph_2 = tf.reshape(graph_2, [-1, 207])
+    graph_2_output = tf.matmul(graph_2, self.w2) + self.b
+    graph_2_output = tf.nn.relu(graph_2_output)
+    output = tf.reshape(graph_2_output, [-1, 12, 207])
     return output
 
 encoder_emb_inp = tf.keras.Input(shape=(12, 207), name='Input')
@@ -133,7 +141,7 @@ print("INFO: Start training...")
 history = model.fit([x_train, time_train_2],
                      y_train,
                      batch_size=1024,
-                     epochs=600,
+                     epochs=500,
                      validation_data=([x_val,time_val_2],y_val))
 
 print("INFO: Start testing...")
